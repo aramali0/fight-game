@@ -1,0 +1,266 @@
+@keyframes attack-ken {
+ 0% {
+   background-position: 0px;
+  transform: translate(-65%, -25%);
+ }
+ 100% {
+   background-position: -21600px;
+   transform: translate(110%, -60%);
+ }
+ 
+}
+
+@keyframes ryu-dead {
+ 0% {
+   background-position: 0px;
+  
+ }
+ 100% {
+   background-position: -9450px;
+  
+ }
+}
+
+@keyframes ken-dead {
+ 0% {
+   background-position: 0px;
+  
+ }
+ 100% {
+   background-position: -499px;
+  
+ }
+}
+
+
+@keyframes ryu-attack {
+ 0% {
+   background-position: 0px;
+    transform: translate(-60%, -40%);
+  
+ }
+ 100% {
+   background-position: -6400px;
+    transform: translate(-110%, -40%);
+  
+ }
+}
+
+
+@keyframes ryu_wainting {
+ 0% {
+   background-position: 0px;
+  
+ }
+ 100% {
+   background-position:-1500px;
+  
+ }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../sources/back2.gif); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px 30px;
+}
+
+.card-header{
+	width: 45%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin:0;
+	padding: 0;
+	background-image: url(../sources/punch2.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: darkred solid 2px;
+}
+
+#header-hero{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin:20px;
+}
+
+
+#header-enemy{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	margin:20px;
+}
+
+
+#characters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60%;
+   
+}
+
+.character{
+	width: 48%;
+	height: 100%;
+	position: relative;
+}
+
+.character-img{
+	width:100px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+.anime-enemy-waiting{
+	 background-image: url(../sources/ryu-waiting.png);
+	 width: 250px;
+	 height: 250px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(20%, -20%);
+	 animation: ryu_wainting 1s steps(6) infinite;
+}
+
+.anime-hero-waiting{
+	 background-image: url(../sources/ken-wainting.png);
+	 width: 250px;
+	 height: 250px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(-110%, -15%);
+	 animation: ryu_wainting 1s steps(6) infinite;
+}
+
+.anime-hero-attack{
+	background-image: url(../sources/ken-attack2.png);
+	 width: 800px;
+	 height: 500px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(-65%, -60%);
+	animation: attack-ken 1.5s steps(27) ;
+}
+
+.anime-ryu-dead{
+	 background-image: url(../sources/ryu-dead.png);
+	 width: 350px;
+	 height: 500px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(-5%, -30%);
+	 animation: ryu-dead 1s steps(27);
+}
+
+.anime-ken-dead{
+	 background-image: url(../sources/ken-hurt2.png);
+	 width: 166px;
+	 height: 250px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(-170%, -20%);
+	 animation: ken-dead 0.5s steps(3);
+}
+
+.anime-ryu-attack{
+	 background-image: url(../sources/ryu-attack.png);
+	 background-size: cover;
+     background-repeat: no-repeat;
+	 width: 800px;
+	 height: 500px;
+	 position: absolute;
+	 top: 50%; 
+	 left: 50%;
+	 transform: translate(-60%, -40%);
+	 animation: ryu-attack 1s steps(8);
+}
+
+.progress-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 70%;
+}
+
+#wrapper {
+  height:10px;
+  width:100%;
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #5D3D42;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper-pm {
+  height:10px;
+  width:30%;
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #5D3D42;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+progress[value] {
+  width:98%;
+  height:100%;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.5) inset;
+}
+
+.pm-progress::-webkit-progress-value {
+    background-color: cyan;
+  }
+  
+ 

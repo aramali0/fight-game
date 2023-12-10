@@ -1,0 +1,169 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: #212121;
+	margin:0;
+	padding: 0;
+	color: aliceblue;
+	width: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.display{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 30px;
+	gap: 20px;
+	height: 80%;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 48%;
+	height: 100%;
+}
+
+.radio {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px 20px;
+	width: 100%;
+	height: 100%;
+	gap:20px;
+}
+
+input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #149CEA;
+	background: rgba(#149CEA, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #149CEA;
+	margin: 20px 20px;
+}
+
+	
+.card {
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=radio] {
+	appearance: none;
+  background-color: #fff;
+  margin: 0;
+	font: inherit;
+  color: #149CEA;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+	display: grid;
+  place-content: center;
+	&::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em #149CEA;
+		background-color: CanvasText;
+		transform-origin: top bottom;
+	}
+	&:checked::before {
+		transform: scale(1);
+	}
+}
+
+#character-img {
+	width:30%;
+	height: 350px;
+	overflow: hidden;
+}
+#character-img #img{
+	width:100%;
+	height:100%;
+}
+
+.button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove default underline for links */
+}
+
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+}
+
+.button:hover::before, .button:hover::after {
+  transform: scale(0);
+}
+
+
+.button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+  text-decoration: none; 
+}
+
+.btn-box{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 40px 0;
+}
+
+.music-btn{
+	background-image: url(../sources/music.png);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+

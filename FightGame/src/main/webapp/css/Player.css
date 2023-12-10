@@ -1,0 +1,90 @@
+@keyframes attack_hero {
+    0% {
+        transform: translateX(0px) scale(0);
+    }
+    100% {
+        transform: translateX(-900px) scale(3);
+    }
+}
+
+@keyframes attack_enemy {
+    0% {
+        transform: translateX(0px) scale(0);
+    }
+    100% {
+        transform: translateX(900px) scale(3);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../sources/back.gif); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 30px;
+}
+
+#header h3 {
+    color: azure;
+    height: 50px;
+    width: 50px;
+}
+
+#characters {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80%;
+}
+
+#character {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#character img {
+    position: relative;
+    z-index: 1;
+    height: 240px;
+    background-color: transparent;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.attack-enemy {
+    display: block;
+    animation: attack_enemy 0.5s ease;
+}
+
+.attack-hero {
+    display: block;
+    animation: attack_hero 0.5s ease;
+}
+
+.attack{
+	display: none;
+}
+
+.card img {
+    height: 60px;
+    transition: all 0.5s;
+}
