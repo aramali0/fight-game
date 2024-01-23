@@ -28,7 +28,7 @@ Getting Started To run the project locally and dive into the gaming experience, 
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/FightingGame.git
+git clone https://github.com/aramali0/FightingGame.git
 Navigate to the project directory:
 bash
 Copy code
