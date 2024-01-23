@@ -1,16 +1,20 @@
 Table of Contents Introduction Features Getting Started Folder Structure Technologies Used Contributing License Introduction This project is a basic fighting game that provides an immersive gaming experience with various pages designed to engage players at different stages:
 
 Welcome Page: Serving as the entry point, this page welcomes players and introduces them to the game's exciting environment.
+
 ![image](https://github.com/aramali0/fight-game/assets/148349303/ab2739dc-4a11-4910-87db-48ebd55a6b57)
 
 
 Choose Player Page: Players have the opportunity to select their preferred character or avatar, personalizing their gaming experience.
+
 <img width="883" alt="image" src="https://github.com/aramali0/fight-game/assets/148349303/8d28a93a-0776-4f0d-933f-a278a021821e">
 
 Play Page: The central hub for the gameplay, where the real-time fighting action unfolds, showcasing the skills and strategies of the chosen characters.
+
 <img width="960" alt="image" src="https://github.com/aramali0/fight-game/assets/148349303/d22ab3e5-25b2-483b-a83b-47495b4f3d76">
 
 Game Over Page: Displayed at the conclusion of the game, this page presents the outcome and results of the player's efforts.
+
 <img width="959" alt="image" src="https://github.com/aramali0/fight-game/assets/148349303/9677699d-d939-4e50-b01f-c16b269b36b7">
 
 Features With a focus on simplicity and user-friendliness, the game boasts the following features:
